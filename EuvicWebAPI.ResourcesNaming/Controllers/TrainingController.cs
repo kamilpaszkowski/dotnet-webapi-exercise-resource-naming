@@ -31,3 +31,4 @@ namespace Euvic.WebAPI.ResourcesNaming.Controllers
         [HttpPatch("")]
         public IActionResult ChangeTrainingDuration([FromRoute] int id, [FromBody] int durationInMinutes) => Ok();
     }
+}

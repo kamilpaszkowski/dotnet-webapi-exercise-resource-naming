@@ -10,25 +10,25 @@ namespace Euvic.WebAPI.ResourcesNaming.Controllers
     {
         // w każdym endpoincie ustaw url do zasobu zgodny z zasadami RESTful API
 
-        [HttpGet("")]
+        [HttpGet("[?]")]
         public IActionResult GetTrainings() => Ok();
 
-        [HttpGet("")]
+        [HttpGet("[?]")]
         public IActionResult GetTrainingAttendees() => Ok();
 
-        [HttpPost("")]
+        [HttpPost("[?]")]
         public IActionResult CreateTraining() => Ok();
 
-        [HttpDelete("")]
+        [HttpDelete("[?]")]
         public IActionResult DeleteTraining([FromRoute] int id) => Ok();
 
-        [HttpDelete("")]
+        [HttpDelete("[?]")]
         public IActionResult DeleteAttendee([FromRoute] int id) => Ok();
 
-        [HttpPut("")]
+        [HttpPut("[?]")]
         public IActionResult UpdateTraining([FromRoute] int id, [FromBody] UpdateTrainingRequest request) => Ok();
 
-        [HttpPatch("")]
+        [HttpPatch("[?]")]
         public IActionResult ChangeTrainingDuration([FromRoute] int id, [FromBody] int durationInMinutes) => Ok();
     }
 }
